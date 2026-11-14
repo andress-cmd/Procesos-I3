@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Integrante 3 | Guion explicado – Juan Valdez</title>
+<style>
+:root{--red:#a70f2d;--red-dark:#850b24;--cream:#f5f1eb;--white:#fffdfb;--ink:#292929;--muted:#706a65;--gold:#c69216;--line:#e4dcd4;--green:#39734f;--soft:#f8f3ee}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.62 Arial,Helvetica,sans-serif}
+header{background:var(--red);color:white;padding:30px 18px}.wrap{max-width:980px;margin:auto}
+.kicker{font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;opacity:.88}
+h1{font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.12;margin:9px 0}
+header p{margin:7px 0;opacity:.94}
+main{max-width:980px;margin:22px auto;padding:0 15px 48px}
+.intro,.note{background:var(--white);border-left:5px solid var(--gold);border-radius:8px;padding:14px 17px;margin:14px 0}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
+button{font:inherit;cursor:pointer}.navbtn,.btn{border:0;background:var(--red);color:white;padding:10px 14px;border-radius:7px;font-weight:700}
+.navbtn.alt,.btn.alt{background:#e8e0d8;color:var(--ink)}
+section{background:var(--white);border:1px solid var(--line);border-radius:11px;margin:17px 0;overflow:hidden}
+h2{font-size:1.3rem;color:var(--red);margin:0;padding:16px 19px;border-bottom:1px solid var(--line)}
+.inner{padding:17px 19px}
+h3{font-size:1.08rem;color:var(--red);margin:21px 0 7px}
+h4{margin:13px 0 5px}
+p{margin:8px 0}ul,ol{padding-left:23px}li{margin:6px 0}
+.tag{display:inline-block;background:#f4e6e9;color:var(--red);padding:4px 10px;border-radius:20px;font-weight:700;font-size:.78rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:11px;margin:13px 0}
+.card{border:1px solid var(--line);border-top:4px solid var(--red);border-radius:8px;padding:13px;background:#fff}
+.card.gold{border-top-color:var(--gold)}.big{font-size:1.55rem;font-weight:800;color:var(--red);line-height:1.25}
+.muted{color:var(--muted);font-size:.9rem}
+.example{background:#f8f2e6;border-left:4px solid var(--gold);padding:12px 14px;border-radius:5px;margin:12px 0}
+.source{background:#f1eee9;border-radius:7px;padding:11px 13px;margin:12px 0;font-size:.9rem}
+.script{background:#f8f6f3;border:1px dashed #b9aaa0;border-radius:8px;padding:15px;margin:12px 0}
+.script strong{color:var(--red)}
+details{border:1px solid var(--line);border-radius:8px;background:#fff;margin:10px 0}
+summary{padding:12px 14px;cursor:pointer;color:var(--red);font-weight:700}
+.detail{padding:0 14px 14px}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.94rem}
+th,td{border:1px solid var(--line);padding:9px;text-align:left;vertical-align:top}
+th{background:#e9e3dc}tr:nth-child(even) td{background:#faf7f3}
+.quiz{padding:14px 16px;border:1px solid var(--line);border-radius:8px;margin:12px 0}
+.q{font-weight:700;margin-bottom:8px}.opt{display:block;padding:8px 10px;border:1px solid var(--line);border-radius:7px;margin:7px 0;cursor:pointer}
+.opt input{accent-color:var(--red);margin-right:8px}.feedback{display:none;padding:10px 12px;background:#f1eee9;border-radius:7px;margin-top:10px}
+.good{color:var(--green);font-weight:700}.bad{color:var(--red);font-weight:700}
+textarea{width:100%;min-height:90px;padding:10px;border:1px solid var(--line);border-radius:7px;font:inherit}
+footer{background:var(--ink);color:white;text-align:center;padding:18px;font-size:.86rem}
+@media(max-width:600px){.inner{padding:14px}table{font-size:.86rem}th,td{padding:7px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+ <div class="kicker">Procesos organizacionales · Universidad de Cundinamarca</div>
+ <h1>Guion explicado y prácticas<br>Integrante 3</h1>
+ <p>Juan Valdez (Procafecol) · Diapositivas 8, 9 y 10</p>
+ <p><b>Objetivo:</b> comprender cada punto, saber explicarlo con ejemplos y responder preguntas sin memorizar mecánicamente.</p>
+</div></header>
+<main>
+<div class="intro"><b>Importante:</b> este material se concentra solo en tu parte. Las cifras y propuestas principales se conservan como aparecen en las diapositivas. Las situaciones marcadas como <b>ejemplo para entender</b> son ilustraciones sencillas para ayudarte a explicar; no son datos reales adicionales de Procafecol.</div>
+<nav>
+ <button class="navbtn" onclick="go('slide8')">Diapositiva 8</button>
+ <button class="navbtn" onclick="go('slide9')">Diapositiva 9</button>
+ <button class="navbtn" onclick="go('slide10')">Diapositiva 10</button>
+ <button class="navbtn alt" onclick="go('practice')">Practicar</button>
+</nav>
+
+<section id="slide8">
+<h2>DIAPOSITIVA 8 · Estrategia de marketing y ventas: un cliente, varios canales, una coordinación</h2>
+<div class="inner">
+<span class="tag">Mensaje central: vender por varios canales requiere que todos estén coordinados.</span>
+<h3>1. ¿Qué quiere decir el título?</h3>
+<p>Juan Valdez no llega a sus clientes de una sola manera. Una persona puede comprar en una cafetería, otra puede encontrar productos en un supermercado y otra puede comprar por internet o mediante un canal institucional.</p>
+<p>La idea de la diapositiva es que, aunque la compra ocurra en lugares distintos, la empresa debe organizarse para atender al cliente de forma coherente.</p>
+<div class="example"><b>Ejemplo para entender:</b> imagina que una promoción anuncia café con descuento en una tienda, pero el supermercado no conoce la promoción o no tiene inventario. El cliente recibe información diferente según el canal. La coordinación busca evitar ese tipo de desorden.</div>
+
+<h3>2. Primer recuadro: Segmentos</h3>
+<p><b>¿Qué es un segmento?</b> Es un grupo de clientes que comparte una forma o necesidad de compra. La diapositiva menciona cuatro grupos:</p>
+<div class="grid">
+ <div class="card"><b>Consumidor en tienda</b><p>Persona que entra a una cafetería Juan Valdez y compra una bebida, un alimento o café.</p><p class="muted"><b>Ejemplo:</b> alguien que compra un cappuccino antes de ir al trabajo.</p></div>
+ <div class="card"><b>Retail y autoservicio</b><p>Compradores que encuentran productos en supermercados, tiendas o establecimientos donde el cliente elige directamente del estante.</p><p class="muted"><b>Ejemplo:</b> una persona que compra una bolsa de café Juan Valdez en un supermercado.</p></div>
+ <div class="card"><b>Clientes institucionales</b><p>Organizaciones o negocios que compran productos para atender sus propias operaciones o clientes.</p><p class="muted"><b>Ejemplo:</b> una empresa u hotel que adquiere café para ofrecerlo a sus visitantes.</p></div>
+ <div class="card"><b>Compradores digitales</b><p>Personas que compran mediante canales en línea.</p><p class="muted"><b>Ejemplo:</b> alguien que pide café desde una página o tienda virtual.</p></div>
+</div>
+<p><b>¿Por qué importa distinguirlos?</b> Porque no todos compran de la misma forma. El consumidor de una cafetería espera atención en el momento; quien compra en un supermercado necesita encontrar el producto disponible; y quien compra por internet espera que el pedido llegue correctamente.</p>
+<div class="example"><b>Cómo explicarlo oralmente:</b> “Tenemos distintos tipos de clientes: quienes compran en las tiendas, quienes encuentran los productos en supermercados, los clientes institucionales y los compradores digitales. Cada grupo utiliza un canal diferente, por eso necesitamos coordinarlos”.</div>
+
+<h3>3. Segundo recuadro: Canales y coordinación</h3>
+<p>La diapositiva propone el <b>Comité Omnicanal y Cliente</b>. “Omnicanal” significa conectar los distintos canales para que no trabajen como si fueran empresas separadas.</p>
+<p>Este comité se reúne <b>cada quince días</b> y sincroniza tres elementos:</p>
+<div class="grid">
+ <div class="card"><b>Inventarios</b><p>Revisar la disponibilidad de productos en los canales.</p><p class="muted"><b>Ejemplo:</b> si una promoción va a aumentar la demanda de café, se debe revisar que los puntos de venta y canales participantes tengan producto suficiente.</p></div>
+ <div class="card"><b>Promociones</b><p>Coordinar las ofertas y la información que se comunica al cliente.</p><p class="muted"><b>Ejemplo:</b> que las áreas involucradas conozcan las fechas, condiciones y productos de una promoción.</p></div>
+ <div class="card"><b>Datos</b><p>Compartir información que ayude a comprender al cliente y su comportamiento de compra.</p><p class="muted"><b>Ejemplo:</b> identificar qué productos tienen mayor demanda o qué canal está utilizando el comprador.</p></div>
+</div>
+<div class="example"><b>¿Por qué cada quince días?</b> Es la frecuencia de coordinación definida en la propuesta. Permite revisar periódicamente lo que está pasando y ajustar inventarios, promociones y datos. No significa que la empresa solo pueda comunicarse esos días; es la frecuencia del comité propuesta en la diapositiva.</div>
+
+<h3>4. Tercer recuadro: Indicadores</h3>
+<p>Un indicador es una medida que permite revisar si algo está funcionando. La diapositiva propone cuatro:</p>
+<table><tr><th>Indicador</th><th>¿Qué revisa?</th><th>Ejemplo sencillo</th></tr>
+<tr><td><b>Pedidos completos y a tiempo</b></td><td>Que el cliente reciba todo lo que pidió y dentro del plazo previsto.</td><td>Pidió tres productos y recibe los tres en la fecha acordada.</td></tr>
+<tr><td><b>Tiempo de respuesta</b></td><td>Cuánto tarda la empresa en responder una consulta, solicitud o inconveniente.</td><td>Un comprador pregunta por un pedido y recibe respuesta oportunamente.</td></tr>
+<tr><td><b>Satisfacción por canal</b></td><td>Qué tan satisfechos quedan los clientes según el canal utilizado.</td><td>Comparar la experiencia de quien compra en tienda con quien compra en línea.</td></tr>
+<tr><td><b>Ventas cruzadas</b></td><td>Si se logra ofrecer y vender productos complementarios al producto que el cliente buscaba.</td><td>Una persona compra café y también lleva una taza o un producto relacionado.</td></tr></table>
+<div class="example"><b>Idea clave:</b> no basta con vender. También hay que revisar si se entrega bien, si se responde rápido y si el cliente queda satisfecho.</div>
+
+<h3>5. Guion completo para exponer esta diapositiva</h3>
+<div class="script">“En esta diapositiva hablamos de la estrategia de marketing y ventas. Juan Valdez atiende diferentes segmentos: consumidores en tienda, compradores de retail y autoservicio, clientes institucionales y compradores digitales. Como cada uno utiliza canales distintos, proponemos el Comité Omnicanal y Cliente, que se reúne cada quince días para coordinar inventarios, promociones y datos. ¿Cómo sabemos si esta coordinación funciona? Revisando los pedidos completos y a tiempo, el tiempo de respuesta, la satisfacción por canal y las ventas cruzadas. En pocas palabras, buscamos que todos los canales trabajen conectados y ofrezcan una buena experiencia al cliente”.</div>
+<details><summary>Si el profesor pregunta: ¿qué es omnicanal?</summary><div class="detail">Es la coordinación de los diferentes canales de atención y venta para que el cliente tenga una experiencia coherente, sin importar dónde compre o consulte.</div></details>
+<details><summary>Si el profesor pregunta: ¿qué diferencia hay entre multicanal y omnicanal?</summary><div class="detail">Multicanal significa que existen varios canales. Omnicanal busca que esos canales estén conectados y coordinados. Ejemplo: tener tienda física y página web es multicanal; procurar que la información, inventarios y atención estén coordinados entre ambas es omnicanal.</div></details>
+</div></section>
+
+<section id="slide9">
+<h2>DIAPOSITIVA 9 · Tracción: una empresa en crecimiento y un diseño construido en dos fases</h2>
+<div class="inner">
+<span class="tag">Mensaje central: mostramos resultados de la empresa y evidencias del trabajo consultor.</span>
+<h3>1. ¿Qué significa “tracción” en esta diapositiva?</h3>
+<p>En esta presentación, tracción significa mostrar que la empresa tiene actividad y resultados económicos, y que el equipo consultor avanzó en un trabajo concreto. La diapositiva no presenta solo una idea: muestra cifras de 2025 y dos fases de trabajo.</p>
+<h3>2. Primer dato: ingresos 2025 – $863.453 millones</h3>
+<div class="card"><div class="big">$863.453 M</div><b>Ingresos de 2025 · +16,2 %</b><p>Los ingresos representan el dinero que recibe la empresa por sus ventas y actividades comerciales, antes de descontar los costos y gastos.</p></div>
+<div class="example"><b>Ejemplo para entender:</b> si una cafetería vende bebidas, alimentos y café empacado, el dinero que recibe por esas ventas forma parte de sus ingresos. Pero eso no significa que todo ese dinero sea ganancia: todavía debe cubrir sus costos y gastos.</div>
+<p><b>¿Qué significa +16,2 %?</b> Que los ingresos de 2025 crecieron un 16,2 % frente al periodo de comparación indicado en el informe. La diapositiva lo presenta como crecimiento de 2025.</p>
+
+<h3>3. Segundo dato: margen EBITDA – 8,8 %</h3>
+<div class="card"><div class="big">8,8 %</div><b>Margen EBITDA 2025</b><p>Es un indicador que permite observar el resultado de la operación en relación con los ingresos, antes de intereses, impuestos, depreciaciones y amortizaciones.</p></div>
+<div class="example"><b>Ejemplo sencillo, no cifra de Juan Valdez:</b> si una empresa recibe $100 por sus ventas y su margen EBITDA es 8,8 %, ese porcentaje equivale a $8,80 de EBITDA por cada $100 de ingresos. Es una forma de interpretar el porcentaje, no un cálculo adicional de la diapositiva.</div>
+<p><b>¿Qué debes evitar decir?</b> No digas que el EBITDA es la utilidad neta. Son conceptos distintos.</p>
+
+<h3>4. Tercer dato: utilidad neta – $21.991 millones</h3>
+<div class="card"><div class="big">$21.991 M</div><b>Utilidad neta 2025</b><p>Es el resultado final que queda después de reconocer los costos, gastos y demás conceptos correspondientes, incluidos los impuestos.</p></div>
+<div class="example"><b>Ejemplo sencillo:</b> si un negocio vende $100, no se queda con los $100 como ganancia. Debe pagar productos, salarios, arriendo, servicios y otros gastos. Lo que queda al final es la utilidad neta, si el resultado es positivo.</div>
+<div class="note"><b>Para no confundir las tres cifras:</b><br>Ingresos = lo que entra por ventas.<br>Margen EBITDA = indicador del resultado operativo.<br>Utilidad neta = resultado final después de los conceptos correspondientes.</div>
+
+<h3>5. ¿Qué trabajo realizó nuestro equipo? Dos fases</h3>
+<div class="grid">
+ <div class="card"><h4>Fase 1 · Auditoría de departamentalización</h4><p>Revisamos cómo estaba distribuida la organización: cómo se agrupaban las áreas, dónde estaban las responsabilidades y cómo se organizaba el trabajo.</p><p class="muted"><b>Ejemplo para entender:</b> revisar si las tareas relacionadas con un mismo objetivo están repartidas entre demasiadas áreas o si no está claro quién responde por ellas.</p></div>
+ <div class="card gold"><h4>Fase 2 · Diagnóstico y propuesta</h4><p>Con base en la revisión, identificamos brechas y elaboramos el diagnóstico, el organigrama propuesto y la nota técnica.</p><p class="muted"><b>Ejemplo para entender:</b> si detectamos que una responsabilidad está dispersa, proponemos dónde ubicarla y quién debería coordinarla.</p></div>
+</div>
+<p><b>¿Qué es departamentalización?</b> Es la manera de agrupar actividades y responsabilidades en áreas o departamentos. Por ejemplo, agrupar actividades de finanzas en un área financiera.</p>
+<p><b>¿Qué es una brecha?</b> Es una diferencia entre la situación actual y lo que se necesita para funcionar mejor. Por ejemplo, que una responsabilidad importante no tenga un responsable claramente identificado.</p>
+<p><b>¿Qué es la nota técnica?</b> Es el documento que sustenta y explica técnicamente el análisis y la propuesta desarrollada por el equipo.</p>
+
+<h3>6. Guion completo para exponer esta diapositiva</h3>
+<div class="script">“En esta diapositiva presentamos la tracción de la empresa y el avance de nuestro trabajo. En 2025, Procafecol registró ingresos por 863.453 millones de pesos, con un crecimiento del 16,2 %. También presentó un margen EBITDA del 8,8 % y una utilidad neta de 21.991 millones. Estas cifras nos muestran el comportamiento económico de la empresa. Por nuestra parte, desarrollamos el trabajo en dos fases: primero, la auditoría de departamentalización, donde revisamos cómo estaban organizadas las áreas; y segundo, el diagnóstico de brechas, el organigrama propuesto y la nota técnica. Así pasamos de revisar la estructura existente a formular una propuesta de mejora”.</div>
+<details><summary>Si preguntan: ¿los ingresos son lo mismo que la utilidad?</summary><div class="detail">No. Los ingresos son el dinero que entra por las ventas y actividades. La utilidad es lo que queda después de descontar los costos, gastos y demás conceptos correspondientes.</div></details>
+<details><summary>Si preguntan: ¿por qué el EBITDA no es utilidad neta?</summary><div class="detail">Porque el EBITDA mide el resultado operativo antes de intereses, impuestos, depreciaciones y amortizaciones. La utilidad neta es el resultado final después de incluir los conceptos correspondientes.</div></details>
+<details><summary>Si preguntan: ¿qué hicieron en la auditoría?</summary><div class="detail">Revisamos la departamentalización, es decir, cómo estaban agrupadas las actividades y responsabilidades dentro de la estructura. El guion no detalla pruebas específicas adicionales, así que no debemos inventarlas.</div></details>
+</div></section>
+
+<section id="slide10">
+<h2>DIAPOSITIVA 10 · Competencia: alternativas estructurales evaluadas</h2>
+<div class="inner">
+<span class="tag">Mensaje central: comparamos tres formas de organizar la empresa y justificamos nuestra propuesta.</span>
+<h3>1. ¿Qué estamos comparando?</h3>
+<p>La diapositiva compara tres alternativas: estructura funcional pura, estructura matricial plena y la propuesta del equipo. La comparación se hace con cuatro criterios. No se trata de decir que las otras estructuras nunca sirven, sino de explicar cuál responde mejor a la necesidad que identificamos en Procafecol.</p>
+<h3>2. Entender las tres alternativas</h3>
+<div class="grid">
+ <div class="card"><h4>Funcional pura</h4><p>Agrupa a las personas según su especialidad o función, por ejemplo, Finanzas, Marketing, Operaciones o Recursos Humanos.</p><p class="muted"><b>Ejemplo:</b> las decisiones de marketing se concentran en el área de Marketing, sin que necesariamente exista un líder responsable de todo un mercado.</p></div>
+ <div class="card"><h4>Matricial plena</h4><p>Combina la organización por funciones con proyectos, productos o mercados. Una persona puede tener que coordinarse con más de un responsable.</p><p class="muted"><b>Ejemplo:</b> una persona de Marketing puede responder a su jefe funcional y, al mismo tiempo, a un líder de un proyecto o mercado.</p></div>
+ <div class="card"><h4>Nuestra propuesta</h4><p>Asigna un responsable por mercado y mantiene capacidades especializadas compartidas para apoyar a los negocios.</p><p class="muted"><b>Ejemplo:</b> Negocio Colombia responde por su mercado y las áreas compartidas aportan capacidades como operaciones, finanzas y digital.</p></div>
+</div>
+
+<h3>3. Desglosar los cuatro criterios de la tabla</h3>
+<table><tr><th>Criterio</th><th>Funcional pura</th><th>Matricial plena</th><th>Propuesta</th></tr>
+<tr><td><b>Responsable por mercado</b><br><span class="muted">¿Hay una persona o unidad claramente responsable de los resultados de ese mercado?</span></td><td>Bajo</td><td>Alto</td><td><b>Alto</b></td></tr>
+<tr><td><b>Velocidad de decisión</b><br><span class="muted">¿Qué tan rápido se pueden tomar decisiones?</span></td><td>Media</td><td>Baja</td><td><b>Alta</b></td></tr>
+<tr><td><b>Complejidad de coordinación</b><br><span class="muted">¿Cuánto esfuerzo se necesita para coordinar áreas y responsables?</span></td><td>Media</td><td>Alta</td><td><b>Media</b></td></tr>
+<tr><td><b>Exigencia de madurez de gestión</b><br><span class="muted">¿Qué tan desarrollados deben estar los procesos, la comunicación y la gestión para que el modelo funcione?</span></td><td>Baja</td><td>Alta</td><td><b>Media</b></td></tr></table>
+
+<h3>4. ¿Cómo explico cada criterio con un ejemplo?</h3>
+<h4>A. Responsable por mercado</h4>
+<p>Significa que se pueda identificar quién responde por el desempeño de Colombia o del negocio internacional.</p>
+<div class="example"><b>Ejemplo:</b> si las ventas internacionales necesitan mejorar, debe existir un responsable claro que lidere las decisiones de ese mercado. En una estructura funcional pura, la responsabilidad puede quedar distribuida entre varias áreas.</div>
+<h4>B. Velocidad de decisión</h4>
+<p>Es el tiempo y la facilidad para tomar una decisión sin pasar por demasiadas coordinaciones.</p>
+<div class="example"><b>Ejemplo:</b> si se necesita ajustar una estrategia comercial para un mercado, una estructura con responsable claro puede facilitar que la decisión avance con mayor rapidez.</div>
+<h4>C. Complejidad de coordinación</h4>
+<p>Es la dificultad de lograr que las diferentes áreas se pongan de acuerdo y trabajen en la misma dirección.</p>
+<div class="example"><b>Ejemplo:</b> una campaña puede necesitar Marketing, Operaciones, inventarios y Finanzas. Si no está claro quién coordina, se pueden presentar demoras o instrucciones diferentes.</div>
+<h4>D. Exigencia de madurez de gestión</h4>
+<p>Se refiere al nivel de organización, comunicación, seguimiento y claridad de responsabilidades que la empresa necesita para que la estructura funcione bien.</p>
+<div class="example"><b>Ejemplo:</b> una estructura con varias líneas de autoridad requiere reglas claras para resolver desacuerdos y evitar que dos jefes den instrucciones contradictorias.</div>
+
+<h3>5. ¿Qué significa autoridad dual?</h3>
+<p>Significa que una persona puede tener dos líneas de autoridad: por ejemplo, un jefe por su función y otro responsable por el proyecto o mercado. Esto puede funcionar en algunas organizaciones, pero requiere coordinación y reglas claras.</p>
+<div class="example"><b>Ejemplo:</b> una persona de Marketing recibe una instrucción de su jefe de área y otra diferente del líder de un mercado. Si no existe una regla para resolver la diferencia, puede no saber cuál prioridad atender primero.</div>
+
+<h3>6. ¿Por qué gana nuestra propuesta según la tabla?</h3>
+<ul>
+ <li>Obtiene nivel <b>alto</b> en responsable por mercado.</li>
+ <li>Obtiene nivel <b>alto</b> en velocidad de decisión.</li>
+ <li>Mantiene nivel <b>medio</b> en complejidad de coordinación.</li>
+ <li>Requiere nivel <b>medio</b> de madurez de gestión.</li>
+</ul>
+<p>La ventaja escrita en la diapositiva es: <b>conserva la especialización por canal sin autoridad dual</b>. Es decir, se mantienen conocimientos y capacidades especializadas, pero se busca evitar que la autoridad quede duplicada.</p>
+<div class="note"><b>Muy importante:</b> la diapositiva aclara que esta es una <b>valoración cualitativa del equipo consultor</b>. No debemos presentarla como un estudio estadístico ni como una medición oficial de Procafecol.</div>
+
+<h3>7. Guion completo para exponer esta diapositiva</h3>
+<div class="script">“Para elegir la estructura, comparamos tres alternativas. La primera es la funcional pura, que organiza el trabajo por áreas, pero en nuestra evaluación tiene un nivel bajo de responsabilidad por mercado. La segunda es la matricial plena: puede asignar responsables por mercado, pero presenta mayor complejidad de coordinación, menor velocidad de decisión y una alta exigencia de madurez de gestión. Finalmente, nuestra propuesta alcanza un nivel alto de responsabilidad por mercado y velocidad de decisión, con una complejidad y exigencia de gestión medias. Su ventaja es que conserva la especialización por canal sin generar autoridad dual. Esta comparación corresponde a una valoración cualitativa de nuestro equipo consultor”.</div>
+<details><summary>Si preguntan: ¿por qué no escogieron la funcional pura?</summary><div class="detail">Porque, según nuestra evaluación, tiene un nivel bajo de responsable por mercado. La responsabilidad puede quedar distribuida entre áreas funcionales.</div></details>
+<details><summary>Si preguntan: ¿la estructura matricial es mala?</summary><div class="detail">No. Puede ser útil en organizaciones que tienen la madurez y los mecanismos para manejar varias líneas de autoridad. En nuestra evaluación, para la necesidad de Procafecol, la matricial plena presenta mayor complejidad y exigencia de gestión.</div></details>
+<details><summary>Si preguntan: ¿por qué su propuesta tiene complejidad media y no baja?</summary><div class="detail">Porque sigue siendo necesario coordinar unidades de mercado con áreas compartidas. La propuesta no elimina la coordinación; busca hacerla más clara y manejable.</div></details>
+<details><summary>Si preguntan: ¿qué significa “sin autoridad dual”?</summary><div class="detail">Que buscamos evitar que una misma persona reciba órdenes de dos jefes con autoridad sobre el mismo trabajo. La propuesta define responsables y mecanismos de coordinación.</div></details>
+</div></section>
+
+<section id="practice">
+<h2>PRÁCTICA · Comprueba que dominas cada diapositiva</h2>
+<div class="inner">
+<p>Responde primero sin mirar tus apuntes. Si fallas, lee la explicación y vuelve a intentarlo.</p>
+<div class="quiz"><div class="q">1. ¿Cuáles son los cuatro segmentos de clientes de la diapositiva 8?</div>
+<label class="opt"><input type="radio" name="q1" value="a">Tiendas, proveedores, empleados y accionistas.</label>
+<label class="opt"><input type="radio" name="q1" value="b">Consumidor en tienda, retail y autoservicio, clientes institucionales y compradores digitales.</label>
+<label class="opt"><input type="radio" name="q1" value="c">Colombia, México, España y Estados Unidos.</label>
+<button class="btn" onclick="check('q1','b','f1','¡Correcto! Esos son los cuatro segmentos de la diapositiva.','Revisa el primer recuadro: Segmentos.')">Comprobar</button><div id="f1" class="feedback"></div></div>
+<div class="quiz"><div class="q">2. ¿Qué hace el Comité Omnicanal y Cliente?</div>
+<label class="opt"><input type="radio" name="q2" value="a">Coordina inventarios, promociones y datos cada quince días.</label>
+<label class="opt"><input type="radio" name="q2" value="b">Contrata a todos los empleados.</label>
+<label class="opt"><input type="radio" name="q2" value="c">Define únicamente los precios del café.</label>
+<button class="btn" onclick="check('q2','a','f2','Correcto. Esa es la función que presenta la diapositiva.','Recuerda los tres elementos: inventarios, promociones y datos.')">Comprobar</button><div id="f2" class="feedback"></div></div>
+<div class="quiz"><div class="q">3. ¿Cuál de estas cifras corresponde al margen EBITDA de 2025?</div>
+<label class="opt"><input type="radio" name="q3" value="a">8,8 %.</label>
+<label class="opt"><input type="radio" name="q3" value="b">$863.453 millones.</label>
+<label class="opt"><input type="radio" name="q3" value="c">$21.991 millones.</label>
+<button class="btn" onclick="check('q3','a','f3','¡Bien! El margen EBITDA es 8,8 %.','$863.453 M son ingresos y $21.991 M es utilidad neta.')">Comprobar</button><div id="f3" class="feedback"></div></div>
+<div class="quiz"><div class="q">4. ¿Qué se hizo en la fase 1 del trabajo?</div>
+<label class="opt"><input type="radio" name="q4" value="a">Se elaboró la nota técnica.</label>
+<label class="opt"><input type="radio" name="q4" value="b">Se realizó la auditoría de departamentalización.</label>
+<label class="opt"><input type="radio" name="q4" value="c">Se implementó el organigrama.</label>
+<button class="btn" onclick="check('q4','b','f4','Correcto. La fase 1 fue la auditoría de departamentalización.','La auditoría corresponde a la fase 1.')">Comprobar</button><div id="f4" class="feedback"></div></div>
+<div class="quiz"><div class="q">5. ¿Qué dificultad se destaca de la matricial plena?</div>
+<label class="opt"><input type="radio" name="q5" value="a">No permite tener áreas especializadas.</label>
+<label class="opt"><input type="radio" name="q5" value="b">Puede generar autoridad dual y alta complejidad de coordinación.</label>
+<label class="opt"><input type="radio" name="q5" value="c">No permite atender mercados internacionales.</label>
+<button class="btn" onclick="check('q5','b','f5','¡Exacto! Esa es la dificultad destacada en la comparación.','Revisa el significado de autoridad dual.')">Comprobar</button><div id="f5" class="feedback"></div></div>
+<div class="quiz"><div class="q">6. ¿La comparación de la diapositiva 10 es una medición oficial?</div>
+<label class="opt"><input type="radio" name="q6" value="a">Sí, es una medición estadística oficial.</label>
+<label class="opt"><input type="radio" name="q6" value="b">No, es una valoración cualitativa del equipo consultor.</label>
+<button class="btn" onclick="check('q6','b','f6','Correcto. Así lo aclara expresamente la diapositiva.','Mira la frase final en rojo bajo la tabla.')">Comprobar</button><div id="f6" class="feedback"></div></div>
+</div></section>
+
+<section>
+<h2>SIMULACRO ORAL · Explícalo con tus propias palabras</h2>
+<div class="inner">
+<p>Usa estos tres retos como ensayo. Habla en voz alta antes de escribir. No tienes que repetir exactamente el guion, pero sí conservar las ideas y cifras.</p>
+<h3>Reto 1 · Diapositiva 8</h3><p>Explícale a alguien por qué una empresa que vende en tiendas, supermercados y medios digitales necesita coordinar sus canales.</p><textarea placeholder="Escribe aquí tu explicación..."></textarea>
+<details><summary>Revisar si mencioné lo esencial</summary><div class="detail">Cuatro segmentos; Comité Omnicanal y Cliente; reunión cada quince días; inventarios, promociones y datos; cuatro indicadores.</div></details>
+<h3>Reto 2 · Diapositiva 9</h3><p>Explica la diferencia entre ingresos, margen EBITDA y utilidad neta. Luego menciona las dos fases del trabajo.</p><textarea placeholder="Escribe aquí tu explicación..."></textarea>
+<details><summary>Revisar si mencioné lo esencial</summary><div class="detail">Ingresos: $863.453 M y +16,2 %; margen EBITDA: 8,8 %; utilidad neta: $21.991 M. Fase 1: auditoría de departamentalización. Fase 2: diagnóstico de brechas, organigrama propuesto y nota técnica.</div></details>
+<h3>Reto 3 · Diapositiva 10</h3><p>Compara las tres estructuras y defiende por qué el equipo recomienda su propuesta.</p><textarea placeholder="Escribe aquí tu explicación..."></textarea>
+<details><summary>Revisar si mencioné lo esencial</summary><div class="detail">Funcional pura: bajo responsable por mercado. Matricial plena: autoridad dual, coordinación alta y velocidad baja. Propuesta: responsable por mercado alto, velocidad alta, coordinación media y madurez media. Valoración cualitativa del equipo.</div></details>
+</div></section>
+
+<div class="note"><b>Regla para tu exposición:</b> explica primero qué significa el punto, después da un ejemplo y finalmente relaciónalo con la propuesta de Procafecol. Así tu explicación tendrá sentido y no sonará como una lectura de la diapositiva.</div>
+</main>
+<footer>Material de estudio del Integrante 3 · Basado en las diapositivas 8, 9 y 10 y en el guion suministrado.</footer>
+<script>
+function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'});}
+function check(group,correct,id,yes,no){
+ const selected=document.querySelector('input[name="'+group+'"]:checked');
+ const box=document.getElementById(id);box.style.display='block';
+ if(!selected){box.innerHTML='<span class="bad">Selecciona una opción primero.</span>';return;}
+ box.innerHTML=selected.value===correct?'<span class="good">'+yes+'</span>':'<span class="bad">'+no+'</span>';
+}
+</script>
+</body></html>
